@@ -10,4 +10,7 @@ int main() {
 	List.insert(2);
 
 	List.printList();
+	List.deleteList();
+	List.printList();
+
 }
