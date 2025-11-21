@@ -4,13 +4,16 @@
 int main() {
 	LinkedList List;
 
-	List.insert(9);
-	List.insert(3);
-	List.insert(6);
-	List.insert(2);
+	List.insertHead(9);
+	List.insertHead(3);
+	List.insertHead(6);
+	List.insertHead(2);
 
 	List.printList();
-	List.deleteList();
+	List.deleteHead();
 	List.printList();
-
+	List.insertTail(1);
+	List.printList();
+	int thirdNode = List.searchNode(3);
+	std::cout << thirdNode << std::endl;
 }
